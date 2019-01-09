@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="List Terms"
+        android:onClick="listTerms"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="List Courses"
+        android:onClick="listCourses"
+         />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="List Mentors"
+        android:onClick="listMentors"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="List Assessments"
+        android:onClick="listAssessments"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="Add Term"
+        android:onClick="addTerm"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="Add Course"
+        android:onClick="addCourse"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="Add Mentor"
+        android:onClick="addMentor"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Add Assessment"
+        android:onClick="addAssessment"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="Add Alert"
+        android:onClick="addAlert"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:text="Build Test Data"
+        android:onClick="addTestData"/>
+
+</LinearLayout>

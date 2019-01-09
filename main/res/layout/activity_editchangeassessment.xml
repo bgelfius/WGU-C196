@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assessment Type: " />
+
+        <RadioGroup
+            android:id="@+id/grpType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rdoPerformance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Performance Assessment"
+                android:checked="true"
+                android:onClick="onTypeClicked"/>
+
+            <RadioButton
+                android:id="@+id/rdoObjective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Objective Assessment"
+                android:onClick="onTypeClicked"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assessment Name: " />
+
+        <EditText
+            android:id="@+id/eAssessmentName"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Assessement Name"
+            android:inputType="text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assessment Date: " />
+
+        <EditText
+            android:id="@+id/eAssessmentDate"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:inputType="text"
+            android:text="MM/DD/YYYY"/>
+
+    </LinearLayout>
+        <CheckBox
+            android:id="@+id/cbAssessmentNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notify Assessment Date"
+            android:onClick="onClickNotify"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Course: " />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:onClick="onSaveAssessment"
+            android:text="Save" />
+
+
+        <!--<Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:onClick="onCancel"
+            android:text="Cancel" />-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

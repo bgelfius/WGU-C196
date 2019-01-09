@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideInset">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Name: " />
+
+            <EditText
+                android:id="@+id/eCourseName"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Term Name"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date: " />
+
+                <TextView
+                    android:id="@+id/eStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MM/DD/YYYY"
+                    android:textSize="24sp" />
+               <!-- <CalendarView
+                    android:id="@+id/eStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+
+            </LinearLayout>
+        <CheckBox
+            android:id="@+id/cbStartNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notify of Start Date"
+            android:onClick="onClickStart"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Date: " />
+
+                <!--<CalendarView
+                    android:id="@+id/eEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+-->
+                <TextView
+                    android:id="@+id/eEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MM/DD/YYYY"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        <CheckBox
+            android:id="@+id/cbEndNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notify of End Date"
+           android:onClick="onClickEnd"
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Couse Status: " />
+
+            <RadioGroup
+                android:id="@+id/grpStatus"
+                android:layout_width="match_parent"
+                android:layout_height="112dp">
+
+                <RadioButton
+                    android:id="@+id/rdoProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:onClick="onStatusClicked"
+                    android:text="In Progress" />
+
+                <RadioButton
+                    android:id="@+id/rdoComplete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Completed"
+                    android:onClick="onStatusClicked"/>
+
+                <RadioButton
+                    android:id="@+id/rdoDrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dropped"
+                    android:onClick="onStatusClicked" />
+
+                <RadioButton
+                    android:id="@+id/rdoPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Plan to take"
+                    android:onClick="onStatusClicked" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="135dp"
+                android:layout_height="35dp"
+                android:onClick="onSave"
+                android:text="Save" />
+
+
+            <!--<Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="135dp"
+                android:layout_height="35dp"
+                android:onClick="onCancel"
+                android:text="Cancel" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

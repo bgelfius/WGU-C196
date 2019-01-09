@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor Name: " />
+
+        <EditText
+            android:id="@+id/eMentorName"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mentor Name"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor Email: " />
+
+        <EditText
+            android:id="@+id/eMentorPhone"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mentor Phone"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentor Email: " />
+
+        <EditText
+            android:id="@+id/eMentorEmail"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mentor Email"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:onClick="onSaveMentor"
+            android:text="Save" />
+
+
+        <!--<Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:onClick="onCancel"
+            android:text="Cancel" />-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

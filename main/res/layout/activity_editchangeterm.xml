@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideInset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Term Name: " />
+
+            <EditText
+                android:id="@+id/eTermName"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Term Name"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date: " />
+
+            <!--<CalendarView
+                android:id="@+id/eStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="297dp" />-->
+            <TextView
+                android:id="@+id/eStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MM/DD/YYYY"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date: " />
+
+            <!--<CalendarView
+                android:id="@+id/eEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+            <TextView
+                android:id="@+id/eEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MM/DD/YYYY"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="276dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Courses: " />
+
+            <ListView
+                android:id="@+id/eCourseList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                >
+            </ListView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="135dp"
+                android:layout_height="35dp"
+                android:onClick="onSave"
+                android:text="Save" />
+
+            <!--<Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="135dp"
+                    android:layout_height="35dp"
+                    android:onClick="onCancel"
+                    android:text="Cancel" />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
